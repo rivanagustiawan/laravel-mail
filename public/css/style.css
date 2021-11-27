@@ -1,0 +1,1722 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;700&display=swap');
+@font-face { font-family: bebasnue-book; 
+    src: url('/fonts/BebasNeue-Book.ttf'); } 
+:root{
+    --main-color : #1EC28B;
+    --color-1 : #FF7D4B;
+    --color-2 : #3F93FD;
+    --bg-dark-home : #22282E;
+    --bg-dark : #1C2127;
+    --main-to-dark-color : var(--main-color);
+    --black-to-white : #FF7D4B;
+
+    --black-900: #000000;
+    --black-400: #B3B3B3;
+    --black-100: #f7f7f7;
+    --black-000: #ffffff;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x:  hidden;
+    background-color: #ffffff;
+    line-height: 32px;
+}
+body.light{
+    --bg-dark-home : #ffffff;
+    --bg-dark : #F1F1F1;
+    --black-000: #000;
+    --black-to-white : #000;
+    --black-900: #ffffff;
+    --black-400: #777777;
+    transition: all 0.5s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+ul{
+    list-style: none;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.text-left {
+    text-align: left !important;
+}
+.section-title{
+    margin-bottom: 60px;
+}
+.text-center{
+    text-align: center;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* modal */
+.modal-backdrop.show{
+    opacity: 1;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+}
+.modal-content{
+    border-radius: 20px;
+    padding: 10px 10px;
+   
+}
+.modal-content{
+ align-items: center;
+ 
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-title {
+    font-family: 'Bebas Neue', cursive;
+   font-size: 32px;
+   font-weight: 600;
+   text-align: center;
+}
+.modal-body{
+  text-align: justify;
+}
+/* Navbar */
+.navbar{
+    background-color: var(--bg-dark);
+    padding: 10px 0; 
+    transition: all 0.2s ease;
+
+ }
+ .brand-text{
+     padding-left: 20px;
+ }
+ .brand-text h2{
+     font-size: 13px;
+     font-weight: 500;
+     font-family: 'Poppins', sans-serif;
+ }
+ .brand-text h3{
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+ }
+ .navbar.navbar-shrink{
+    background-color: var(--bg-dark);
+     transition: all 0.2s ease;
+ }
+ 
+ .navbar > .container{
+     padding: 0 0px;
+ }
+ .navbar .navbar-brand{
+    font-size: 31px;
+    color: var(--black-000);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+ .navbar .nav-item{
+     font-family: 'Bebas Neue', cursive;
+ }
+ .navbar .nav-item .nav-link{
+     color: var(--black-000);
+     font-size: 22px;
+     text-transform: uppercase;
+     font-weight: 400;
+     position: relative;
+     margin: 0 18px;
+     text-align: center;
+     padding:  10px 20px;
+     justify-content: center;
+     display: flex;
+ }
+ .navbar .nav-item .nav-link::before{
+    content: '';
+     position: absolute;
+     left: 35%;
+     right: 0;
+     bottom: 0;
+     height: 3px;
+     width: 25px;
+     text-align: center;
+     border-radius: 5px;
+     background-color: var(--color-1);
+     transition: all 0.5s ease;
+     transform: scale(0);
+ }
+ .navbar .nav-item .nav-link.active{
+     font-weight: 400;
+ }
+ .navbar .nav-item .nav-link.masuk{
+    background-color: var(--color-1);
+    border-radius: 4px;
+    padding: 5px 30px;
+    transition: all 0.5s ease;
+ }
+ 
+ .navbar .nav-item .nav-link.masuk:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+ }
+ 
+
+ .navbar .nav-item .nav-link.active::before,
+ .navbar .nav-item .nav-link:hover::before{
+     transform: scale(1);
+     transition: all 0.3s ease;
+ }
+ .navbar .navbar-brand img{
+    max-height: 150px;
+    max-width: 200px;
+    width: 66px;
+    height: 82px;
+ }
+ .navbar .navbar-brand span{
+     font-size: 13px;
+ }
+ 
+ .btn{
+    border: 2px solid var(--main-color);
+    outline: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    background: var(--main-color);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition:  0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+.btn-2{
+    border: 2px solid var(--color-1);
+    outline: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    background: var(--color-1);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 10px 0;
+    transition:  0.5s;
+    cursor: pointer;
+}
+.btn-2:hover{
+    border: 2px solid var(--color-1);
+    background-color: transparent;
+    color: var(--color-1);
+}
+
+
+ /* Section Home */
+ .home{
+    min-height: 100vh;
+    background-color: var(--bg-dark-home);
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease;
+   
+ }
+
+.home-btn{
+    margin-top: 40px;
+  
+}
+
+.home-text{
+    margin: 0 20px;
+  
+   
+}
+.home-text span{
+    font-size: 92px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: var(--black-000);
+   
+}
+.home-text h1{
+    font-size: 92px;
+    font-family: bebasnue-book;
+    text-transform: uppercase;
+    color: var(--black-000);
+  
+    
+}
+
+.effect-wrap .effect-1{
+    position: absolute;
+    z-index: -3;
+    right: 0%;
+    top: 0%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    }
+.effect-wrap .effect-2{
+    position: absolute;
+    z-index: -3;
+    left: 0%;
+    top: 0%;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.effect-wrap .ginting{
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 13%; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+}
+.effect-wrap .evandimas{
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    top:25%;  
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.effect-wrap .asap{
+    position: absolute;
+    z-index: -2;
+    right: 2%;
+    top: 50%;  
+    opacity: 0.3;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .asap2{
+    position: absolute;
+    z-index: -2;
+    right: 40%;
+    top: 50%;  
+    opacity: 0.2;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* Grafik Section */
+    .grafik{
+        background-color: var(--bg-dark);
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s ease;
+        
+    }
+    .grafik-tex{
+        color: var(--black-000);
+        margin-bottom: 20px;
+    }
+    .grafik-tex h2{
+        font-size: 64px;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .grafik-tex p{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .chart{
+        margin-top: 20px;
+        padding: 30px 40px;
+        justify-content: center;
+        display: flex;
+        border-radius: 22px;
+        background-color: var(--bg-dark-home);
+    }
+    #myChart{
+        height: auto; 
+        width: auto; 
+        max-width: 800px; 
+        max-height: 1200px;
+    }
+  
+    .grafik-wrap .decor1{
+        position: absolute;
+        z-index: 0;
+        left: 0%;
+        top: 50%;
+    }
+    .grafik-wrap .decor2{
+        position: absolute;
+        z-index: 0;
+        right: 0%;
+        top: 10%;
+    }
+
+    /* Keolahragaan Section */
+    .keolahragaan{
+        background-color: var(--bg-dark);
+        position: relative;
+        z-index: 1;
+        padding-bottom: 150px;
+        transition: all 0.5s ease;
+    }
+    .keolahragaan-text{
+        margin-bottom: 30px;
+    }
+    .keolahragaan-text h2{
+        color: var(--black-000);
+        font-size: 64px;
+        font-family: 'Bebas Neue', cursive;
+        text-transform: uppercase;
+    }
+    .keolahragaan-text p{
+        color: var(--black-400);
+        line-height: 41px;
+        font-size: 22px;
+    }
+    .keolahragaan-item h1{
+        color: var(--color-1);
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .keolahragaan-item p{
+        color: var(--black-000);
+        font-family: 'Bebas Neue', cursive;
+        font-size: 24px;
+    }
+    .keolahragaan-img{
+        position: relative;
+    }
+    .decor3{
+        position: absolute;
+        z-index: 1;
+        right: 15%;
+        top: 25%;
+    }
+    .keolahragaan-wrap .decor4{
+        position: absolute;
+        z-index: 3;
+        right: 0%;
+        overflow: hidden;
+        top: 60%;
+    }
+    .keloahragaan-btn{
+        margin-top: 25px;
+    }
+
+    /* kepramukaan Section */
+    .kepramukaan{
+        background-color: var(--bg-dark);
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    .kepramukaan-text{
+        margin-bottom: 30px;
+    }
+    .kepramukaan-text h2{
+        color: var(--black-000);
+        font-size: 64px;
+        font-family: 'Bebas Neue', cursive;
+        text-transform: uppercase;
+    }
+    .kepramukaan-text p{
+        color: var(--black-400);
+        line-height: 41px;
+        font-size: 22px;
+    }
+    .kepramukaan-item h1{
+        color: var(--color-1);
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .kepramukaan-item p{
+        color: var(--black-000);
+        font-family: 'Bebas Neue', cursive;
+        font-size: 24px;
+    }
+    .kepramukaan-img{
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+    .decor5{
+        position: absolute;
+        right: 0%;
+        top: 20%;
+    }
+    .kepramukaan-wrap .decor5{
+        position: absolute;
+        z-index: 1;
+        right: 9%;
+        top: 20%;
+    }
+    .kepramukaan-btn{
+        margin-top: 25px;
+    }
+    
+
+    /* Kepemudaan */
+   
+    .kepemudaan-wrap .decor6{
+        position: absolute;
+        z-index: 1;
+        right: 0%;
+        top: 0%;
+        transition: all 0.5s ease;
+    }
+    .kepemudaan-img{
+        position: relative;
+    }
+    .decor7{
+        position: absolute;
+        z-index: 1;
+        right: 25%;
+        top: 15%;
+       
+    }
+    .decor8{
+        position: absolute;
+        z-index: 1;
+        left: 8%;
+        top: 30%;
+       
+    }
+
+    /* Top Footer */
+    .top-footer{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 150px;
+        background-color: var(--bg-dark);
+        transition: all 0.5s ease;
+      
+    }
+    .rectangel-footer{
+        background-color: var(--bg-dark-home);
+        padding: 50px 120px;
+        border-radius: 31px;
+        background-image: url(/asset/1.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+       
+    }
+    .rectangel-text{
+        color: var(--black-000);
+        text-transform: capitalize;
+    }
+ 
+    .rectangel-text h2{
+     font-weight: 200;
+     font-size: 64px;
+     font-family: bebasnue-book;
+     
+    }
+    .rectangel-text span{
+     font-weight: 400;
+     font-size: 64px;
+     font-family: 'Bebas Neue', cursive;
+    }
+    .btn-footer{
+       margin-top: 40px;
+    }
+    .wrap-footer{
+        z-index: 1;
+    }
+    .wrap-footer .footer-ornamen img{
+        position: absolute;
+    }
+  
+    .footer-wrap .footer-img{
+        position: absolute;
+        z-index: 1;
+        right: 7%;
+        top: -10%;
+    }
+    .footer-wrap .decor9{
+        position: absolute;
+        z-index: -1;
+        left: 10%;
+        top: 56%;
+    }
+
+    /* footer */
+.footer{
+    margin-top: 20px;
+    padding: 60px 30px;
+    background-color: #fff;
+    position: relative;
+}
+.footer-item-top{
+    text-align: start;
+}
+.footer .footer-item-top h3{
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 14px;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer .footer-item-top p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 24px;
+    padding-right: 40px;
+
+}
+.footer .footer-item-top i{
+    font-size: 25px;
+    color: #555555;
+   margin-right: 30px;
+   margin-top: 0px;
+ 
+}
+.footer .footer-item .unstyle i{
+    font-size: 16px;
+    color: #555555;
+   margin-right: 10px;
+}
+.footer .footer-item-menu{
+   text-align: start;
+   
+}
+.footer .footer-item-menu h3{
+   
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer .footer-item-menu p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 24px;
+    padding-right: 40px;
+
+}
+.footer .footer-item-bergabung{
+   text-align: start;
+  
+}
+.footer .footer-item-bergabung h3{
+   
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer .footer-item-bergabung p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 24px;
+    padding-right: 40px;
+
+}
+.footer .footer-item-hubungi{
+   text-align: start;
+  
+}
+.footer .footer-item-hubungi h3{
+   
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer .footer-item-hubungi p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 24px;
+    padding-right: 40px;
+
+}
+.footer .footer-item-hubungi .unstyle i{
+    font-size: 16px;
+    color: #555555;
+   margin-right: 10px;
+}
+.unstyle{
+    padding-left: 0;
+    list-style: none;
+}
+.unstyle span{
+    width: 1px;
+}
+.unstyle li{
+   margin: 5px 0;
+}
+.text-footer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #555555;
+    text-decoration: none;
+    list-style: none;
+    position: relative; 
+    transition: all 0.5s ease; 
+}
+.text-footer:hover{
+   opacity: 0.6;
+    color: #555555;
+    transition: all 0.5s ease; 
+   
+}
+.footer-img{
+    font-size: 5px;
+    color: var(--black-400);
+}
+.footer-item .footer-img i{
+    margin-bottom: 20px;
+}
+
+/* bot footer */
+.bot-footer{
+    background-color: var(--main-color);
+
+}
+.copyright{
+    text-align: center;
+    color: var(--black-100);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px;
+}
+
+
+/* Dark Mode */
+.toggle-theme{
+    position: fixed;
+    right: 10px;
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 40px;
+    background-color: var(--black-to-white);
+    z-index: 12000;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+.toggle-theme i{
+    line-height: 40px;
+    z-index: 3;
+    box-shadow: var(--black-100);
+}
+    .fas .fa-moon{
+        background-color: #000;;
+    }
+
+    
+    /* Responsive */
+
+    @media (min-width: 320px) and (max-width: 767px){
+
+        .section-padding{
+            padding: 50px 0;
+        }
+        /* Navbar */
+        .navbar{
+            padding: 5px 0; 
+            background-color:var(--bg-dark);
+         }
+         .brand-text h2{
+             display: none;
+         }
+         .brand-text h3{
+             display: none;
+         }
+        
+         .navbar > .container{
+             padding: 0 0px;
+         }
+        .navbar-toggler{
+            background-color: var(--black-to-white);
+            box-shadow: var(--shadow-black-300);
+            height: 34px;
+            width: 44px;
+            padding: 0;
+            font-size: 17px;
+            color: #ffffff;
+            margin: 0 10px;
+    
+        }
+        
+        .navbar-nav{
+            background-color:  var(--bg-dark);
+            box-shadow: var(--shadow-black-300); 
+        }
+        .navbar .nav-item{
+            margin: 0;
+        }
+        .navbar.navbar-shrink .navbar-toggler,
+        .navbar.navbar-shrink .navbar-nav{
+            background-color: var(--bg-dark);
+        }
+        .navbar .nav-item .nav-link::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            transition: all 0.5s ease;
+            transform: scale(0);
+         }
+         .navbar .nav-item .nav-link.active{
+             font-weight: 400;
+         }
+         .navbar .nav-item .nav-link.masuk{
+            background-color: var(--color-1);
+            border-radius: 4px;
+            padding: 5px 2px;
+            transition: all 0.5s ease;
+            margin-bottom: 30px;
+         }
+        .navbar .nav-item .nav-link.active::before,
+        .navbar .nav-item .nav-link:hover::before{
+            transform: scale(0);
+            transition: all 0.3s ease;
+        }
+        .navbar .navbar-brand img{
+            height: auto; 
+            width: auto; 
+            max-width: 60px; 
+            max-height: 60px;
+            margin: 10px 20px;
+        }
+
+        /* Home */
+        .home-text{
+            margin: 0 0px; 
+            line-height: 10px;
+        }
+        .home-text span{
+            font-size: 42px;
+        }
+        .home-text h1{
+            font-size: 42px;       
+        }
+        .effect-wrap .effect-1{
+            right: 0%;
+            top: 70%;
+            height: auto; 
+            width: auto; 
+            max-width: 500px; 
+            max-height: 500px;
+           
+            
+        }
+        .effect-wrap .effect-2{
+            left: 0%;
+            top: 0%;
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+
+        }
+        .effect-wrap .ginting{
+            display: none;
+        }
+        .effect-wrap .evandimas{
+            display: none;
+        }
+        .effect-wrap .asap{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+        }
+        
+        .effect-wrap .asap2{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+        }
+        .btn{
+            font-size: 18px;
+        }
+        .btn:hover{
+            border: 2px solid var(--main-color);
+            background-color: transparent;
+            color: var(--main-color);
+        }
+
+        /* Grafik */
+        .grafik-tex h2{
+            font-size: 42px;
+        }
+        .grafik-tex p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .chart-item{
+            height: auto; 
+            width: auto; 
+            max-width: 1220px; 
+            max-height: 70px;  
+            padding: 10px 10px;
+        }
+        .grafik-wrap .decor1{
+            left: 0%;
+            top: 90%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+        .grafik-wrap .decor2{
+            right: 0%;
+            top: 35%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+            z-index: -1;
+        }
+
+        /* Keolahragaan Section */
+        .keolahragaan-text{
+            margin-bottom: 10px;
+        }
+        .item{
+            text-align: center;
+        }
+        .keolahragaan-text h2{
+            font-size: 42px;
+            text-align: center;
+        }
+        .keloahragaan-btn{
+            text-align: center;
+        }
+        .keolahragaan-text p{
+            font-size: 16px;
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        .keolahragaan-item{
+            margin: 0 10px;
+           
+        }
+        .keolahragaan-item h1{
+            font-size: 36px;
+            margin-bottom: 0px;
+        }
+        .keolahragaan-item p{
+            font-size: 16px;
+        }
+        .keolahragaan-img{
+            left: 30%;
+            top: 39%;
+            height: auto; 
+            width: auto; 
+            max-width: 200px; 
+            max-height: 200px;
+            margin-bottom: 60px;
+            display: none;
+            position: relative;
+        }
+        .keolahragaan-img2{
+            position: relative;
+            
+        }
+        .keolahragaan-img2 img{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            margin-bottom: 30px;
+           justify-content: center;
+            
+        }
+        .keolahragaan-img2 .decor32{
+            position: absolute;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+            right: 15%;
+            top: 25%;
+            z-index: 1;
+            
+        }
+       
+        .keolahragaan-wrap .decor3{
+            right: 0%;
+            top: 10%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+        .keolahragaan-wrap .decor4{
+            right: 0%;
+            top: 60%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+        .home-btn{
+            text-align: center;
+            margin-top: 10px;
+        }
+            
+        /* kepramukaan Section */
+        .kepramukaan-img2{
+            position: relative;
+            
+        }
+        .pembina{
+           justify-content: center;
+        }
+        .pading-left{
+            padding-left: 15px;
+        }
+        .kepramukaan-img2 img{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            margin-bottom: 30px;
+           justify-content: center;
+            
+        }
+        .kepramukaan-img2 .decor52{
+            position: absolute;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+            right: 10%;
+            top: 20%;
+            z-index: 1;
+            
+        }
+        .kepramukaan-text{
+            margin-bottom: 10px;
+        }
+        .kepramukaan-text h2{
+            font-size: 42px;
+            text-align: center;
+        }
+        .kepramukaan-text p{
+            font-size: 16px;
+            text-align: center;
+            line-height: 24px;
+            margin-bottom: 0px;
+        }
+        .kepramukaan-item h1{
+            font-size: 36px;
+            margin-bottom: 0px;
+        }
+        .kepramukaan-item{
+            margin: 0 10px;
+        }
+        .kepramukaan-item p{
+            font-size: 16px;
+        }
+        .kepramukaan-img img{
+            left: 30%;
+            top: 39%;
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            display: none;
+        }
+        
+        .kepramukaan-wrap .decor5{
+            right: 0%;
+            top: 10%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+        .kepramukaan-btn{
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+            /* Kepemudaan */
+        .kepemudaan-img img{
+            left: 22%;
+            top: 37%;
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            display: none;
+        }
+        .kepemudaan-img2{
+            position: relative;
+            
+        }
+        .kepemudaan-img2 img{
+            height: auto; 
+            width: auto; 
+            max-width: 300px; 
+            max-height: 300px;
+            margin-bottom: 30px;
+           justify-content: center;
+            
+        }
+        .kepemudaan-img2 .decor72{
+            position: absolute;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+            right: 15%;
+            top: 13%;
+            z-index: 1;
+            
+        }
+        .kepemudaan-img2 .decor82{
+            position: absolute;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+            left: 10%;
+            top: 25%;
+            z-index: 1;
+            
+        }
+        .kepemudaan-btn{
+            text-align: center;
+        }
+        .kepemudaan-wrap .decor6{
+            z-index: 1;
+            right: 0%;
+            top: 0%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px; 
+        }
+        .kepemudaan-wrap .decor7{
+            z-index: -1;
+            left: 60%;
+            top: 50%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px; 
+        }
+        .kepemudaan-wrap .decor8{
+            left: 15%;
+            top: 70%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+       
+
+        /* Top Footer */
+        .top-footer{
+            padding-bottom: 50px;
+        }
+        .rectangel-footer{
+            margin: 0 10px;
+            padding: 20px 20px;
+            background-size: 150px;
+            background-position-x: right;
+            background-position-y: top;
+        }
+        .rectangel-text br{
+            display: none;
+        }
+        .rectangel-text h2{
+            font-size: 28px;
+        }
+        .rectangel-text span{
+            font-size: 28px;
+        }
+        .footer-wrap .footer-img{
+            display: none;
+        }
+        .footer-wrap .decor9{
+            position: absolute;
+            z-index: -1;
+            left: 5%;
+            top: 56%;
+            height: auto; 
+            width: auto; 
+            max-width: 70px; 
+            max-height: 70px;
+        }
+        .btn-2{
+            font-size: 17px;
+        }
+
+        /* footer */
+        
+        .footer{
+            text-align: center;
+            margin-top: 0px;
+            padding: 40px 20px;
+            background-color: #fff;
+            position: relative;
+        }
+        .btn-footer{
+            text-align: center;
+        }
+        .footer .footer-item-top p{
+            
+            padding-right: 10px;
+        
+        }
+        .footer-item{
+            margin-bottom: 20px;
+        }.footer .footer-item-menu{
+            margin-top: 20px;
+        
+        }.footer .footer-item-bergabung{
+            margin-top: 20px;
+        
+        }.footer .footer-item-hubungi{
+            margin-top: 15px;
+        }
+        .footer .footer-item h3{
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 5px;
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        .footer .footer-item p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #555555;
+            line-height: 27px;
+            padding-right: 0px;
+            line-height: 22px;
+        }
+        .footer .footer-item i{
+            font-size: 25px;
+            color: #555555;
+            margin: 0 10px;
+            margin-top: 0px;
+        }
+        .footer .footer-item .unstyle i{
+            font-size: 16px;
+            color: #555555;
+            margin-right: 10px;
+        }
+        .unstyle{
+            padding-left: 0;
+            list-style: none;
+        }
+        .unstyle span{
+            width: 1px;
+        }
+        .unstyle li{
+        margin: 0px 0;
+        }
+        .text-footer{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #555555;
+            text-decoration: none;
+            list-style: none;
+            position: relative; 
+            transition: all 0.5s ease; 
+        }
+        .text-footer:hover{
+        opacity: 0.6;
+            color: #555555;
+            transition: all 0.5s ease; 
+        }
+        .footer-img{
+            font-size: 5px;
+            color: var(--black-400);
+            margin-bottom: 50px;
+        }
+        .footer-item .footer-img i{
+            margin-bottom: 50px;
+        }
+
+        /* bot footer */
+        .bot-footer{
+            background-color: var(--main-color);
+        }
+        .copyright{
+            text-align: center;
+            color: var(--black-100);
+            font-size: 14px;
+            font-weight: 300;
+            margin: 20px;
+            line-height: 20px;
+        }
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Navbar */
+ .navbar .nav-item .nav-link{
+     color: var(--black-000);
+     font-size: 22px;
+     text-transform: uppercase;
+     font-weight: 400;
+     position: relative;
+     margin: 0 5px;
+     text-align: center;
+     padding:  5px 15px;
+     justify-content: center;
+     display: flex;
+ }
+
+    .brand-text h2{
+        display: none;
+    }
+    .brand-text h3{
+        display: none;
+    }
+    .home-text span{
+        font-size: 52px;
+    }
+    .home-text h1{
+        font-size: 52px;       
+    }
+
+    .effect-wrap .effect-1{
+        right: 0%;
+        top: 70%;
+        height: auto; 
+        width: auto; 
+        max-width: 500px; 
+        max-height: 500px;
+       
+        
+    }
+    .effect-wrap .effect-2{
+        left: 0%;
+        top: 0%;
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 300px;
+
+    }
+    .effect-wrap .ginting{
+        display: none;
+    }
+    .effect-wrap .evandimas{
+        display: none;
+    }
+    .effect-wrap .asap{
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 300px;
+    }
+    
+    .effect-wrap .asap2{
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 300px;
+    }
+    .btn{
+        font-size: 24px;
+    }
+    .btn:hover{
+        border: 2px solid var(--main-color);
+        background-color: transparent;
+        color: var(--main-color);
+    }
+
+     /* Grafik */
+     .grafik-tex h2{
+        font-size: 52px;
+    }
+    .grafik-tex p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .chart-item{
+        height: auto; 
+        width: auto; 
+        max-width: 1220px; 
+        max-height: 70px;  
+        padding: 10px 10px;
+    }
+    .grafik-wrap .decor1{
+        left: 0%;
+        top: 90%;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+    }
+    .grafik-wrap .decor2{
+        right: 0%;
+        top: 35%;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+        z-index: -1;
+    }
+     /* Keolahragaan Section */
+     .keolahragaan-text{
+        margin-bottom: 10px;
+    }
+    .item{
+        text-align: center;
+    }
+    .keolahragaan-text h2{
+        font-size: 52px;
+        text-align: center;
+    }
+    .keloahragaan-btn{
+        text-align: center;
+    }
+    .keolahragaan-text p{
+        font-size: 18px;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    
+    .keolahragaan-img{
+        display: none;
+    }
+    .keolahragaan-img2{
+        position: relative;
+        
+    }
+    .keolahragaan-img2 img{
+        height: auto; 
+        width: auto; 
+        max-width: 350px; 
+        max-height: 350px;
+        margin-bottom: 30px;
+       justify-content: center;
+        
+    }
+    .keolahragaan-img2 .decor32{
+        position: absolute;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+        right: 30%;
+        top: 25%;
+        z-index: 1;
+        
+    }
+   
+    .keolahragaan-wrap .decor4{
+        right: 0%;
+        top: 60%;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+    }
+    .keloahragaan-btn{
+        margin-top: 25px;
+    }
+    /* kepramukaan Section */
+    .kepramukaan-img2{
+       position: relative;
+    }
+    .pading-left{
+        padding-left: 15px;
+    }
+    .pembina{
+        justify-content: center;
+     }
+    .kepramukaan-img2 img{
+        height: auto; 
+        width: auto; 
+        max-width: 350px; 
+        max-height: 350px;
+        margin-bottom: 30px;
+       justify-content: center;
+       
+        
+    }
+    .kepramukaan-img2 .decor52{
+        position: absolute;
+        height: auto; 
+        width: auto; 
+        max-width: 70px; 
+        max-height: 70px;
+        right: 30%;
+        top: 20%;
+        z-index: 1;
+  
+    }
+    .kepramukaan-text{
+        margin-bottom: 10px;
+    }
+    .kepramukaan-text h2{
+        font-size: 52px;
+        text-align: center;
+    }
+    .kepramukaan-text p{
+        font-size: 18px;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    .kepramukaan-img img{
+        display: none;
+    }
+    
+    .kepramukaan-wrap .decor5{
+        right: 0%;
+        top: 10%;
+        height: auto; 
+        width: auto; 
+        max-width: 70px; 
+        max-height: 70px;
+    }
+    .kepramukaan-btn{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+     /* Kepemudaan */
+     .kepemudaan-img img{
+       
+        display: none;
+    }
+    .kepemudaan-img2{
+        position: relative;
+        margin-top: 25px;
+        
+    }
+    .kepemudaan-img2 img{
+        height: auto; 
+        width: auto; 
+        max-width: 350px; 
+        max-height: 350px;
+        margin-bottom: 30px;
+       justify-content: center;
+        
+    }
+    .kepemudaan-img2 .decor72{
+        position: absolute;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+        right: 27%;
+        top: 13%;
+        z-index: 1;
+        
+    }
+    .kepemudaan-img2 .decor82{
+        position: absolute;
+        height: auto; 
+        width: auto; 
+        max-width: 90px; 
+        max-height: 90px;
+        left: 23%;
+        top: 25%;
+        z-index: 1;
+        
+    }
+    .kepemudaan-btn{
+       display: flex;
+       justify-content: center;
+       margin-top: 25px;
+
+    }
+    .kepemudaan-wrap .decor6{
+        z-index: 1;
+        right: 0%;
+        top: 0%;
+        height: auto; 
+        width: auto; 
+        max-width: 70px; 
+        max-height: 70px; 
+    }
+     /* Top Footer */
+     .top-footer{
+        padding-bottom: 50px;
+    }
+    .rectangel-footer{
+        background-color: var(--bg-dark-home);
+        padding: 50px 120px;
+        border-radius: 31px;
+        background-image: url(/asset/1.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: top;
+        background-size: 200px;
+    }
+    .rectangel-text br{
+        display: none;
+    }
+    .rectangel-text h2{
+        font-size: 34px;
+    }
+    .rectangel-text span{
+        font-size: 34px;
+    }
+    .footer-wrap .footer-img{
+        display: none;
+    }
+    .footer-wrap .decor9{
+        position: absolute;
+        z-index: -1;
+        left: 5%;
+        top: 56%;
+        height: auto; 
+        width: auto; 
+        max-width: 70px; 
+        max-height: 70px;
+       
+    }
+    .btn-2{
+        font-size: 24px;
+    }
+    .footer-item-top {
+        margin-bottom: 20px;
+    }
+    .unstyle li{
+        margin: 2px 0;
+    }
+
+    
+  }
+
+
+  /* macbook */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* Navbar */
+
+ .brand-text{
+     padding-left: 18px;
+ }
+ .brand-text h2{
+     font-size: 9px;
+     font-weight: 500;
+     font-family: 'Poppins', sans-serif;
+ }
+ .brand-text h3{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ .navbar .nav-item .nav-link{
+     font-size: 18px;
+ }
+ 
+
+
+    .home-text{
+        padding: 0 100px;
+    }
+    .home-text h1{
+        font-size: 62px;
+    }
+    .home-text span{
+        font-size: 62px;
+    }
+    .home-btn a{
+        font-size: 24px;
+    }
+
+
+    .effect-wrap .ginting{
+        height: auto; 
+        width: auto; 
+        max-width: 500px; 
+        max-height: 500px;
+        
+    }
+    .effect-wrap .evandimas{
+        height: auto; 
+        width: auto; 
+        max-width: 450px; 
+        max-height: 450px;
+    }
+    .footer-wrap .footer-img{
+        height: auto; 
+        width: auto; 
+        max-width: 450px; 
+        max-height: 450px;
+        top: 10%;
+        right: 10%;
+    }
+    .rectangel-text h2{
+        font-size: 54px;
+    }
+    .rectangel-text span{
+        font-size: 54px;
+    }
+    .btn-footer .btn-2{
+        font-size: 24px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 

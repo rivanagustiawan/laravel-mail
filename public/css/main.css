@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: bebasnue-book;
+    src: url('/fonts/BebasNeue-Book.ttf');
+}
+
+ :root {
+    --main-color: #1EC28B;
+    --color-1: #FF7D4B;
+    --color-2: #3F93FD;
+    --bg-dark-home: #22282E;
+    --bg-dark: #1C2127;
+    --main-to-dark-color: var(--main-color);
+    --black-to-white: #FF7D4B;
+    --black-900: #000000;
+    --black-400: #B3B3B3;
+    --black-100: #f7f7f7;
+    --black-000: #ffffff;
+}
+
+
+/* Navbar */
+
+.brand-text h2 {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.brand-text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.navbar .navbar-brand img {
+    height: auto;
+    width: auto;
+    max-width: 70px;
+    max-height: 70px;
+    padding: 0 20px;
+}
+
+
+/* Login Eye icon */
+
+
+/* Sidebar */
+
+.side {
+    align-items: center;
+}
+
+.side .logo-img {
+    height: auto;
+    width: auto;
+    max-width: 80px;
+    max-height: 80px;
+    padding: 0 20px;
+}
+
+.header-title p {
+    font-size: 60px;
+    color: white;
+    font-family: bebasnue-book;
+    margin-bottom: 0;
+}
+
+.header-title span {
+    font-size: 60px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header-title2 span {
+    font-size: 50px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.sub-header-title p {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-kembali {
+    border: 2px solid var(--color-1);
+    outline: none;
+    padding: 10px 80px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    background: transparent;
+    color: var(--color-1);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-kembali:hover {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.btn-loguot {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    justify-content: flex-start;
+}
+
+.icon-logout {
+    margin-right: 5px;
+    color: gray;
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 2px solid var(--main-color);
+    outline: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.item-center {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.item-left {
+    text-align: left;
+    align-items: left;
+    display: flex;
+}
+
+.fieldset {
+    padding: 30px;
+}
+
+.biodata-title p {
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    color: white
+}
+
+.fieldlabels {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.text-require {
+    text-align: left;
+}
+
+.text-require p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-require span {
+    font-size: 18px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+}
+.eye{
+    background-color: transparent !important;
+    border: none;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: 20%;  
+}
+.eye a{
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+
+/* Responsive handphone*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .eye{
+        font-size: 12px;
+        right: 5%;
+        
+    }
+    .sm-item-center {
+        text-align: center;
+        align-items: center;
+        display: flex;
+    }
+    .sm-justify-content-center{
+        display: flex;
+        justify-content: center;
+    }
+    .table-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-foto {
+        display: flex;
+        flex-direction: column;
+    }
+    .xs-margin {
+        margin-bottom: 10px;
+    }
+    .xs-margin-top {
+        margin-top: 10px;
+    }
+    .brand-text {
+        display: none;
+    }
+    .header-title {
+        margin-bottom: 5px;
+    }
+    .header-title p {
+        font-size: 32px;
+        color: white;
+        font-family: bebasnue-book;
+    }
+    .header-title span {
+        font-size: 32px;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+    }
+    .sub-header-title p {
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+    .custom-file-upload {
+        border: 2px solid var(--main-color);
+        outline: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        background: transparent;
+        color: white;
+        font-weight: 400;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .custom-file-upload:hover {
+        border: 2px solid var(--main-color);
+        background-color: transparent;
+        color: var(--main-color);
+    }
+    .fieldset {
+        padding: 20px;
+    }
+    .biodata-title p {
+        font-size: 30px;
+        font-family: 'Bebas Neue', cursive;
+        color: white
+    }
+    .fieldlabels {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .header-title2 span {
+        font-size: 30px;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .custom-file-upload {
+        border: 2px solid var(--main-color);
+        outline: none;
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        background: transparent;
+        font-weight: 400;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .custom-file-upload:hover {
+        border: 2px solid var(--main-color);
+        background-color: transparent;
+        color: var(--main-color);
+    }
+    .sm-justify-content-center{
+        display: flex;
+        justify-content: center;
+    }
+    .flex-foto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* macbook */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .brand-text h2 {
+        font-size: 8px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0px;
+        color: white
+    }
+    .brand-text h3 {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0px;
+        color: white
+    }
+    .side .logo-img {
+        height: auto;
+        width: auto;
+        max-width: 60px;
+        max-height: 60px;
+        padding: 0 10px;
+    }
+}

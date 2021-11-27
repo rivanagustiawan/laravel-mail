@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+p {
+    color: grey
+}
+
+#heading {
+    text-transform: uppercase;
+    color: #673AB7;
+    font-weight: normal
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform .form-check-input:checked {
+    background-color: #1EC28B;
+    border-color: #E2F5EF;
+}
+
+#msform .form-check-input[type=radio] {
+    border-radius: 50%;
+    padding: initial;
+}
+
+#msform .form-check-input {
+    width: 1em;
+    margin-top: .25em;
+    background-color: fff;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-appearance: none;
+    color-adjust: exact;
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    appearance: auto;
+    padding: initial;
+    border: initial;
+    margin: 3px 3px 0px 5px;
+}
+
+#msform fieldset {
+    background-color: #2C343A;
+    /* padding: 30px; */
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+#msform input,
+#msform select,
+#msform textarea {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #3E464D;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: #fff;
+    background-color: #3E464D;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #3F8DFD;
+    color: #fff;
+    background: #3E464D;
+    outline-width: 0
+}
+
+#msform .action-button {
+    width: 150px;
+    background: #1EC28B;
+    font-weight: 500;
+    color: white;
+    font-size: 16px !important;
+    border: 0 none;
+    border: 1px solid #1EC28B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 5px 10px 0px;
+    float: right
+}
+.action-button {
+    width: 150px;
+    background: #1EC28B;
+    font-weight: 500;
+    color: white;
+    font-size: 16px !important;
+    border: 0 none;
+    border: 1px solid #1EC28B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 5px 10px 0px;
+    float: right
+}
+.action-button[disabled]{
+   background-color: gray;
+   border: 1px solid gray;
+ 
+}
+.action-button[disabled]:hover{
+  opacity: 1;
+}
+
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    opacity: 0.5;
+}
+.action-button:hover,
+.action-button:focus {
+    opacity: 0.5;
+}
+
+#msform .action-button-previous {
+    width: 150px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FF7D4B;
+    border: 1px solid #FF7D4B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 20px 5px 10px 0px;
+    float: right
+}
+.action-button-previous {
+    width: 150px;
+    background: transparent;
+    font-weight: 500;
+    color: #FF7D4B;
+    font-size: 16px;
+    border: 1px solid #FF7D4B;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 5px;
+    margin: 20px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+   opacity: 0.5;
+}
+.action-button-previous:hover,
+.action-button-previous:focus {
+   opacity: 0.5;
+   color: #FF7D4B;
+}
+.a-btn-green{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    background: #1EC28B;
+    font-weight: 500;
+    color: white;
+    font-size: 16px !important;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 5px 10px 0px;
+    float: right 
+}
+.a-btn-green:hover{
+    color: white;
+    opacity: 0.5;
+}
+.a-btn-orange{
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    background: transparent;
+    font-weight: 500;
+    border: 1px solid #FF7D4B;
+    color: #FF7D4B;
+    font-size: 16px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 5px;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px 5px 10px 0px;
+    float: right 
+}
+.a-btn-orange:hover{
+    color: #FF7D4B;
+    opacity: 0.5;
+}
+
+.card {
+    z-index: 0;
+    border-radius: 8px;
+    background-color: #2C343A;
+    border: none;
+    padding: 30px;
+}
+
+.progresIcon {
+    padding: 30px;
+}
+
+.fs-title {
+    color: #1EC28B;
+    margin-bottom: 15px;
+    text-align: left
+}
+
+.purple-text {
+    color: #3F8DFD;
+    font-weight: normal
+}
+
+.steps {
+    color: gray;
+    margin-bottom: 10px;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #fff;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 33%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #pemesan:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f007";
+    font-weight: 900;
+}
+
+#progressbar #mempelai:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f15b";
+    font-weight: 900;
+}
+
+#progressbar #acara:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f004";
+    font-weight: 900;
+}
+
+#progressbar #undangan:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f658";
+    font-weight: 900;
+}
+
+#progressbar #tingkatan:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f658";
+    font-weight: 900;
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #3F8DFD;
+}
+
+.progress {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #fff;
+}
+
+.fit-image {
+    width: auto;
+    height: 120px;
+    object-fit: cover
+}

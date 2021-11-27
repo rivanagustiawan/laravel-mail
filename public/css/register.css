@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: bebasnue-book;
+    src: url('/fonts/BebasNeue-Book.ttf');
+}
+
+body {
+    background-color: var(--bg-dark-home);
+}
+
+html {
+    height: 100vh;
+}
+
+:root {
+    --main-color: #1EC28B;
+    --color-1: #FF7D4B;
+    --color-2: #3F93FD;
+    --bg-dark-home: #22282E;
+    --bg-dark: #1C2127;
+    --main-to-dark-color: var(--main-color);
+    --black-to-white: #FF7D4B;
+    --black-900: #000000;
+    --black-400: #B3B3B3;
+    --black-100: #f7f7f7;
+    --black-000: #ffffff;
+}
+
+.containerLogin {
+    background: rgba(44, 52, 58, .5);
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 50px;
+    border: 1px solid #04DAB4;
+}
+
+.daftar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-register h1 {
+    font-size: 54px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.bot-text {
+    margin: 0 20px;
+}
+
+.bot-text h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.bot-text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.img-bot {
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-bot img {
+    height: auto;
+    width: auto;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.form-signin input {
+    background-color: #3E464D;
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+}
+
+.form-signin input:focus {
+    background-color: #3E464D;
+    margin-bottom: 10px;
+    border: 1px solid #3F8DFD;
+    color: #fff;
+}
+
+.btn_login {
+    border: 2px solid #19a777;
+    outline: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    background: #19a777;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    border: 2px solid #19a777;
+    outline: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    background: transparent;
+    color: #19a777;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h1 {
+    color: #fff;
+}
+
+b {
+    color: #FF7D4B;
+}
+
+.label p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.label b {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF7D4B;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+}
+
+.label b:hover {
+    opacity: 0.8;
+}
+
+.effect-wrap .effect-1 {
+    position: absolute;
+    z-index: -3;
+    right: 0%;
+    top: 0%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .effect-2 {
+    position: absolute;
+    z-index: -3;
+    left: 0%;
+    top: 0%;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .ginting {
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 13%;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .evandimas {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    top: 25%;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .asap {
+    position: absolute;
+    z-index: -2;
+    right: 2%;
+    top: 50%;
+    opacity: 0.3;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.effect-wrap .asap2 {
+    position: absolute;
+    z-index: -2;
+    right: 40%;
+    top: 50%;
+    opacity: 0.2;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.eye{
+    background-color: transparent !important;
+    border: none;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: 25%;  
+}
+.eye a{
+    font-size: 14px;
+    color: white;
+    border: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .eye{
+        font-size: 12px;
+        right: 4%;
+ 
+    }
+    .effect-wrap .effect-1 {
+        right: 0%;
+        top: 70%;
+        height: auto;
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .effect-wrap .effect-2 {
+        left: 0%;
+        top: 0%;
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .effect-wrap .ginting {
+        display: none;
+    }
+    .effect-wrap .evandimas {
+        display: none;
+    }
+    .effect-wrap .asap {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .effect-wrap .asap2 {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .img-bot {
+        display: none;
+    }
+    .title-register h1 {
+        font-size: 32px;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .effect-wrap .effect-1 {
+        right: 0%;
+        top: 70%;
+        height: auto;
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .effect-wrap .effect-2 {
+        left: 0%;
+        top: 0%;
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .effect-wrap .ginting {
+        display: none;
+    }
+    .effect-wrap .evandimas {
+        display: none;
+    }
+    .effect-wrap .asap {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+    .effect-wrap .asap2 {
+        height: auto;
+        width: auto;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
